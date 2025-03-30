@@ -42,8 +42,8 @@ def create_database_and_table():
         CREATE TABLE IF NOT EXISTS structured_logs (
         id SERIAL PRIMARY KEY,
         timestamp TIMESTAMP NOT NULL,
-        ip_address VARCHAR(15),
-        event_type VARCHAR(50),
+        ip_address INT,
+        event_type INT,
         description TEXT
         );
         """)
